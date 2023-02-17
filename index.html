@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputs{
+            width: 250px;
+            height: 25px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inscription</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Nom *</td>
+                <td><input type="text" onkeydown="checkName(this)" class="inputs" placeholder="donnez votre nom..."></td>
+                <td id="nom"></td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td><input type="text" class="inputs" placeholder="donnez votre prenom..."></td>
+                <td id="prenom"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea class="inputs"></textarea></td>
+                <td id="address"></td>
+            </tr>
+            <tr>
+                <td>Numéro de telephone *</td>
+                <td><input type="number" class="inputs" placeholder="donnez votre numero de tel..."></td>
+                <td id="num_tel"></td>
+            </tr>
+            <tr>
+                <td>Date de naissance</td>
+                <td><input type="date" class="inputs" placeholder="donnez votre numero de tel..."></td>
+                <td id="date_naiss"></td>
+            </tr>
+            <tr>
+                <td>Mot de passe *</td>
+                <td><input type="password" class="inputs" placeholder="donnez votre mot de passe..."></td>
+                <td id="mdp"></td>
+            </tr>
+            <tr>
+                <td>Confirmation mot de passe *</td>
+                <td><input type="password" class="inputs" placeholder="confirmer votre mot de passe..."></td>
+                <td id="cMdp"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="submit">submit</button>
+                    <button type="reset">reset</button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <script src="./inscription.js">
+    </script>
+</body>
+</html>
